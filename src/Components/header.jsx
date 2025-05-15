@@ -2,7 +2,7 @@ import "./header.css"
 
 export function Header() {
     return <header>
-        <nav>
+        <nav className="nav">
             <img src="/images/logo.webp"/>
             <ul>
                <li>Products</li>
