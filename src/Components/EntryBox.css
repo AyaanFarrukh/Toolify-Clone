@@ -61,6 +61,13 @@ section {
     background-color: rgb(106, 106, 236);
     margin-top: 2px;
     margin-bottom: 0px;
+    transition: background-color 0.5s ease-in-out,box-shadow 0.5s ease-in-out,color 0.5s ease-in-out;
+}
+
+.main-area div button:hover {
+    background-color: white;
+    border: 1px solid rgb(187, 187, 187);
+    color: blue;
 }
 .main-area div button img {
     width: 40px;

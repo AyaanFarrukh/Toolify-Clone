@@ -66,6 +66,10 @@ footer {
     .footer-nav ul {
         flex-direction: column;
     }
+    .footer-nav ul li {
+        margin-left: 0px;
+        margin-right: 20px;
+    }
     .second-area {
         height: 300px;
     }
@@ -74,3 +78,4 @@ footer {
     }
     
 }
+

@@ -27,6 +27,7 @@ header {
     font-size: 18px;
     font-family: "Arial";
     cursor: pointer;
+    transition: color 0.2s ease-in-out;
 }
 .nav ul li:hover {
     color: blue;
@@ -34,6 +35,7 @@ header {
 header img {
     width: 200px;
     margin-right: auto;
+    padding: 10px;
 }
 .dashboard-btn {
     width: 150px;
@@ -47,6 +49,7 @@ header img {
     border-radius: 5px;
     background-color: rgb(106, 106, 236);
     margin-right: 20px;
+    transition: background-color 0.5s ease-in-out,box-shadow 0.5s ease-in-out,color 0.5s ease-in-out;
 }
 .lang-btn {
     width: 100px;
@@ -60,7 +63,9 @@ header img {
     margin-bottom: 5px;
     margin-right: 10px;
     background-color: none;
+    transition: background-color 0.5s ease-in-out,box-shadow 0.5s ease-in-out,color 0.5s ease-in-out;
 }
+
 
 .sidebar-btn {
     height: 40px;
@@ -108,6 +113,12 @@ hr {
     font-size: 30px;
 }
 
+.dashboard-btn:hover {
+    background-color: white;
+    border: 1px solid rgb(187, 187, 187);
+    color: blue;
+}
+
 @media screen and (max-width: 1135px) {
     .top-ul li {
         display: none;
@@ -117,5 +128,12 @@ hr {
     }
     .lang-btn,.dashboard-btn{
         display: none;
+    }
+}
+
+@media screen and (max-width: 770px)  {
+    header img {
+        width: 150px;
+        padding: 10px;
     }
 }
