@@ -53,21 +53,24 @@ footer {
 }
 
 
-* {
-    border: 1px solid yellow;
-}
 @media screen and (max-width: 778px) {
     .footer-logo {
         width: 175px;
     }
-    .footer {
-        height: 500px;
+    footer {
+     height: 450px;
     }
-    .second-area {
-        height: 400px;
-        background-color: green;
+    .footer-nav {
+        height: fit-content;
     }
     .footer-nav ul {
-     flex-direction: column;
+        flex-direction: column;
     }
+    .second-area {
+        height: 300px;
+    }
+    .copyright-p {
+        margin-top: 0x;
+    }
+    
 }

@@ -7,3 +7,15 @@ html,body {
 * {
     box-sizing: border-box;
 }
+#cursor-light {
+    position: fixed;
+    pointer-events: none;
+    width: 200px;
+    height: 200px;
+    background-color: rebeccapurple;
+    border-radius: 50%;
+    mix-blend-mode: screen;
+    filter: blur(5px);
+    transition: transform 0.05s linear;
+    z-index: 9999;
+  }
