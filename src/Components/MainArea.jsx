@@ -19,8 +19,8 @@ export function MainArea() {
     <h1>featured</h1>
     </div>
      <aside>
-        {toolContextData.map((tool) => {
-            return <AsideBox title={tool.name} description={tool.description}/> 
+        {toolContextData.map((tool,i) => {
+            return <AsideBox key={i} title={tool.name} description={tool.description}/> 
         })}
         
      </aside>

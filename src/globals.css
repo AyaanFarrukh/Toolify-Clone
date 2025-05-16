@@ -1,3 +1,9 @@
-body {
+html,body {
     background-color: rgb(224, 238, 243);
+    margin: 0;
+    overflow-x: hidden;
+
+}
+* {
+    box-sizing: border-box;
 }

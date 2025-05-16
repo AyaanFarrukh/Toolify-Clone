@@ -48,6 +48,26 @@ footer {
 }
 .copyright-p {
     font-size: 8px;
-    margin-top: 12px;
+    margin-top: 18px;
     color: rgb(117, 117, 117);
+}
+
+
+* {
+    border: 1px solid yellow;
+}
+@media screen and (max-width: 778px) {
+    .footer-logo {
+        width: 175px;
+    }
+    .footer {
+        height: 500px;
+    }
+    .second-area {
+        height: 400px;
+        background-color: green;
+    }
+    .footer-nav ul {
+     flex-direction: column;
+    }
 }

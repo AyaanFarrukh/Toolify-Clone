@@ -1,5 +1,6 @@
 section {
-    margin-top: 0px;
+    margin-top: 50px;
+    flex-grow: 1;
     width: 100%;
     height: 350px;
     background-color: rgb(230, 252, 255);
@@ -37,7 +38,7 @@ section {
 }
 .main-area div input {
     width: 550px;
-    height: 40px;
+    height: 60px;
     padding: 10px 20px;
     font-size: 18px;
     background-color: white;
@@ -58,9 +59,128 @@ section {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     background-color: rgb(106, 106, 236);
-    margin-top: 2px;
+    margin-top: 0px;
+    margin-bottom: 2px;
 }
 .main-area div button img {
     width: 40px;
     height: 40px;
+}
+
+@media screen and (max-width: 1245px) {
+    .main-area {
+        width: 100%;
+    }
+    section {
+        height: 400px;
+    }
+    .main-area h1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 885px) {
+    .main-area {
+        width: 100%;
+    }
+    section {
+        height: 400px;
+    }
+    .main-area h1 {
+        font-size: 35px;
+    }
+    .main-area p {
+        width: 500px;
+        text-align: center;
+    }
+    .main-area div input {
+        height: 40px;
+    }
+    .main-area div button {
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .main-area {
+        width: 100%;
+    }
+    section {
+        height: 400px;
+    }
+    .main-area h1 {
+        font-size: 35px;
+        width: 400px;
+        text-align: center;
+    }
+    .main-area p {
+        width: 500px;
+        text-align: center;
+    }
+    .main-area div input {
+        height: 40px;
+        width: 300px;
+    }
+    .main-area div button {
+        height: 40px;
+        margin: 0;
+        margin-top: 4px;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    .main-area {
+        width: 100%;
+    }
+    section {
+        height: 400px;
+    }
+    .main-area h1 {
+        font-size: 25px;
+        width: 400px;
+        text-align: center;
+    }
+    .main-area p {
+        width: 400px;
+        font-size: 15px;
+        text-align: center;
+    }
+    .main-area div input {
+        height: 40px;
+        width: 300px;
+    }
+    .main-area div button {
+        height: 40px;
+    }
+}
+
+
+@media screen and (max-width: 430px) {
+    .main-area {
+        width: 100%;
+    }
+    section {
+        height: 400px;
+    }
+    .main-area h1 {
+        font-size: 25px;
+        width: 300px;
+        text-align: center;
+    }
+    .main-area p {
+        width: 300px;
+        font-size: 15px;
+        text-align: center;
+    }
+    .main-area div input {
+        height: 35px;
+        width: 170px;
+        font-size: 18px;
+    }
+    .main-area div button {
+        height: 35px;
+        width: 90px;
+        margin-top: 3px;
+    }
 }
