@@ -3,6 +3,7 @@ import { toolsContext } from "../hooks/Context"
 import { useContext } from "react"
 import { MainBoxes } from "./mainboxes";
 export function MainContent() {
+
      const toolsContextData = useContext(toolsContext);
     return (<>
                 <div className="main-area-box">

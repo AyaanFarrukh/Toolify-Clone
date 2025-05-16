@@ -26,7 +26,7 @@ export function App() {
    return (
    <div style={{display: "flex", flexDirection: "column"
    }}>
-        <div ref={cursorLightRef} id="cursor-light"></div>
+        <div ref={cursorLightRef} id="cursor-light" className="cursor-light"></div>
    <Header/>
    <EntryBox />
    <MainArea/>

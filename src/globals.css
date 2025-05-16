@@ -20,3 +20,9 @@ html,body {
     transition: transform 0.05s linear;
     z-index: 9999;
   }
+
+  @media screen and (max-width: 1024px){
+    .cursor-light {
+    display: none;   
+    }
+  }
