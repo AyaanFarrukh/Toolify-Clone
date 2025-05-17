@@ -66,3 +66,20 @@ export let toolsContext = createContext([
       "description": "Advanced AI transcription service for audio, video, and YouTube files."
     }
   ]);
+
+  export let toolsUnderNav = createContext([ {
+    "name": "Trae",
+    "description": "Advanced coding assistant offering zero-cost access to powerful models."
+  },
+  {
+    "name": "Rubii AI",
+    "description": "Create and interact with AI-generated fandom characters and stories."
+  },
+  {
+    "name": "OctoComics",
+    "description": "AI-powered comic creation tool supporting various comic styles and communities."
+  },
+  {
+    "name": "GetInvoice",
+    "description": "Automates invoice and receipt processing for businesses using AI."
+  },])

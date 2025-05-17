@@ -4,7 +4,10 @@ import { Header } from "./Components/header";
 import { MainContent } from "./Components/main";
 import { MainArea } from "./Components/MainArea";
 import "../src/globals.css"
+import { Route,Routes } from "react-router-dom";
 import { useEffect,useRef } from "react";
+import { HomePage } from "./Pages/Home";
+import { Tools } from "./Pages/Tools";
 
 export function App() {
    const cursorLightRef = useRef(null);
@@ -23,14 +26,15 @@ export function App() {
         document.removeEventListener("mousemove", handleMouseMove);
       };
     }, []);
+
+
    return (
-   <div style={{display: "flex", flexDirection: "column"
-   }}>
-        <div ref={cursorLightRef} id="cursor-light" className="cursor-light"></div>
-   <Header/>
-   <EntryBox />
-   <MainArea/>
-   <Footer/>
-   </div>
+      <>
+      <Routes>
+        <Route path="/" element = {<div style={{display: "flex", flexDirection: "column"}}>
+        <div ref={cursorLightRef} id="cursor-light" className="cursor-light"></div><HomePage /></div>} />
+        <Route path = "/tools" element = {<Tools />} />
+      </Routes>
+   </>
    )
 }

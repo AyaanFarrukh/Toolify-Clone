@@ -1,0 +1,10 @@
+.grid-under-nav-area {
+    height: 140px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 5px;
+    padding: 40px;
+}
+.grid-under-nav-area div {
+    height: 100%;
+}

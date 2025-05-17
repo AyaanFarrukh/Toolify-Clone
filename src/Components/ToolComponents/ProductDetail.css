@@ -1,0 +1,63 @@
+.product-detail-sec {
+    width: 99%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    height: 100%;
+}
+.product-head-div {
+    width: 100%;
+    height: 75px;
+}
+.product-head-div h1 {
+    font-size: 30px;
+    font-family:  "Arial";
+    font-weight: bold;
+}
+.product-details-main {
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 10px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+.what-detail-box {
+    margin-top: 5px;
+    width: 98%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+.question-box {
+    padding: 10px;
+}
+.question-box h1 {
+    font-family: "Arial";
+    font-size: 30px;
+    margin: 0;
+}
+.answer-box {
+    flex: 1;
+    display: flex;
+    align-items: start;
+    padding: 10px;
+    border-bottom: 1px solid grey;
+}
+.answer-box p,.answer-box ul li {
+    font-size: 20px;
+    margin-top: 0px;
+    font-family: "Arial";
+}
+
+.answer-box ul {
+    margin-left: 0px;
+}
+.answer-box ul li {
+   margin-left: -18px; 
+   line-height: 40px;
+   font-size: 25px;
+}

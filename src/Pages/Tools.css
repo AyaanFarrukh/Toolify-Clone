@@ -1,0 +1,18 @@
+.route-path-div {
+    width: 100%;
+    height: 50px;
+    margin-top: 70px;
+    background-color: rgb(240, 251, 255);
+    display: flex;
+    justify-content: center;
+}
+.route-path-div ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.route-path-div ul li {
+    margin-left: 20px;
+    font-family: "Arial";
+    font-size: 18px;
+}
