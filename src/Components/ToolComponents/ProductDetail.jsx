@@ -1,6 +1,26 @@
+import { useState } from "react"
 import "./ProductDetail.css"
+import { FAQ } from "./FAQ";
 
 export function ProductDetails() {
+
+    const [faq,setFaq] = useState([{
+        ques: "Can I test Brizy AI for free before buying a plan?",
+        answer: "Yes! You get 5 free website generations with Brizy AI (start on www.ai.brizy.io), plus a 14-day free trial in Brizy Cloud, where you can generate unlimited websites and explore all the features, including the drag-and-drop editor."
+    },{
+        ques: "How can I customize my website built with Brizy AI?",
+        answer: "You can easily customize your AI-generated website using Brizy Cloud’s drag-and-drop editor—it's included in all AI builder plans, and there’s no need for coding!"
+    },{
+         ques: "What if I don’t like the website AI creates?",
+        answer: "You can fully customize it—or get a refund within 30 days!"
+    },{
+        ques: "Will my website be mobile-friendly?",
+       answer: "Yes! Brizy AI builds mobile-optimized websites by default. Whether your visitors are on desktops, tablets, or smartphones, your site will look flawless on any device."
+   },{
+        ques: "Do I need coding skills to use Brizy AI?",
+        answer: "Nope! Brizy AI does all the heavy lifting. Once your site is generated, you can easily tweak it using our drag-and-drop editor—no coding required."
+    }]);
+
    return (
     <section className="product-detail-sec">
         <div className="product-head-div">
@@ -49,6 +69,44 @@ export function ProductDetails() {
                     <li>#3 Scalable & Efficient - Handle more projects with less manual effort</li>
                     <li>#4 New Revenue Stream - Offer a branded website builder as an add-on service</li>
                  </ul>
+                </div>
+            </div>
+            <div className="what-detail-box ">
+                <div className="question-box ">
+                    <h1>FAQ From Brizy AI</h1>
+                </div>
+                <div className="answer-box ">
+                 {faq.map((q,i) => {
+                    return <FAQ question={q.ques} answer={q.answer}/>
+                 })}
+                </div>
+            </div>
+            <div className="what-detail-box ">
+                <div className="question-box ">
+                    <h1>Brizy AI Support Email & Customer service contact & Refund contact etc.</h1>
+                </div>
+                <div className="answer-box ">
+                  <p>More Contact, visit the contact us page()</p>
+                </div>
+            </div>
+            <div className="what-detail-box ">
+                <div className="question-box ">
+                    <h1>Brizy AI Login</h1>
+                </div>
+                <div className="answer-box ">
+                <ul>
+                    <li>Brizy AI Company name: .</li>
+                    <li>Brizy AI Company address: .</li>
+                    <li>More about Brizy AI, Please visit the about us page().</li>
+                 </ul>
+                </div>
+            </div>
+            <div className="what-detail-box ">
+                <div className="question-box ">
+                    <h1>Brizy AI Sign Up</h1>
+                </div>
+                <div className="answer-box ">
+                  <p>Brizy AI Login Link:</p>
                 </div>
             </div>
         </main>

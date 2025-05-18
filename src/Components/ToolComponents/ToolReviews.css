@@ -1,0 +1,146 @@
+.user-reviews {
+    width: 100%;
+    height: fit-content;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+.user-box {
+    width: 100%;
+    height: fit-content;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    margin-bottom: 20px;
+}
+.user-inf-area {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    border-bottom: 1px solid grey;
+}
+.user-name {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    font-family: "Arial";
+}
+.user-name p {
+    margin-left: 20px;
+    font-size: 20px;
+}
+.user-stars-area {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: start; 
+
+}
+.user-star-give-area {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: start; 
+}
+.star-rating {
+    margin-left: 30px;
+}
+.star-rating span {
+    transition: scale 0.2s ease-in-out;
+}
+.star-rating span:hover {
+    scale: 1.1;
+}
+.user-stars-area span {
+    margin-left: 20px;
+    margin-bottom: 5px;
+    font-size: 20px;
+} 
+
+.user-review-area {
+    flex: 1;
+    display: flex;
+    align-items: start;
+}
+.user-review-area p {
+    margin: 15px;
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: "Arial";
+}
+
+.leave-rev-head {
+    font-family: "Arial";
+    font-size: 30px;
+}
+.review-main-area {
+    height: 500px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+.review-section {
+    padding: 30px;
+}
+.stars-area {
+    width: 100%;
+    height: 70px;
+    margin-bottom: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-bottom: 1px solid #808080;
+}
+
+.rev-stars {
+    font-size: 30px;
+    margin-left: 30px;
+}
+.stars-area p {
+    font-family:  "Arial";
+    margin-left: 40px;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.sugg-area {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+
+}
+.sugg-area h2 {
+    margin: 0px;
+    margin-left: 30px;
+    font-family: "Arial";
+}
+.give-rev-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.give-rev-area textarea {
+    margin: 30px;
+    height: 175px;
+    width: 95%;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.give-rev-area button {
+    margin-left: 30px;
+    width: 100px;
+    height: 50px;
+    font-size: large;
+    border-radius: 5px;
+    border: none;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}

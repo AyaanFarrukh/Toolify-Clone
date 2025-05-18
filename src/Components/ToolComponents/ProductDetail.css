@@ -4,6 +4,7 @@
     align-items: start;
     flex-direction: column;
     height: 100%;
+    margin-top: 20px;
 }
 .product-head-div {
     width: 100%;
@@ -27,6 +28,7 @@
 }
 .what-detail-box {
     margin-top: 5px;
+    margin: 15px;
     width: 98%;
     height: fit-content;
     display: flex;
@@ -43,6 +45,7 @@
 .answer-box {
     flex: 1;
     display: flex;
+    flex-direction: column;
     align-items: start;
     padding: 10px;
     border-bottom: 1px solid grey;
@@ -55,9 +58,52 @@
 
 .answer-box ul {
     margin-left: 0px;
+    margin-top: 0px;
 }
 .answer-box ul li {
    margin-left: -18px; 
    line-height: 40px;
    font-size: 25px;
+}
+
+.faq-ques-box {
+    margin: 10px;
+    border-bottom: 1px solid grey;
+    width: 90%;
+    height: 60px;
+    overflow: hidden;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+.ques-box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: row;
+}
+.faq-ques-box h2 {
+    margin: 0;
+    margin: 15px;
+    font-family: "Arial";
+    overflow: hidden;
+}
+.faq-ques-box button {
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.faq-answer {
+    margin: 10px;
+    padding: 5px;
+}
+.showans {
+   height: fit-content;
+   color: blue;
 }

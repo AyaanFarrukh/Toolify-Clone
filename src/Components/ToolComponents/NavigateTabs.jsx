@@ -7,7 +7,7 @@ export function NavigateTabs() {
     <nav className="nav-tabs">
       <button>Product Details</button>
       <button>Reviews</button>
-      <button>Pricing</button>
+      <button>FAQ</button>
       <button>Analytics</button>
     </nav>
    )

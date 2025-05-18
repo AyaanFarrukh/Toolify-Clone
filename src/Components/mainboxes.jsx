@@ -27,7 +27,7 @@ export function MainBoxes({title,description}) {
        return <div className={`box fade-in ${isVisible ? "visible" : ""}`} ref={ref} onClick={() => {
            navigate("/tools");
        }}>
-            <h3 className="tool-title">{title}</h3>
-            <p className="tool-description">{description}</p>
+            <h3 title={title} className="tool-title">{title}</h3>
+            <p title={description} className="tool-description">{description}</p>
        </div>
 }

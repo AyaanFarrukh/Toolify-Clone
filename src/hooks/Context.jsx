@@ -83,3 +83,9 @@ export let toolsContext = createContext([
     "name": "GetInvoice",
     "description": "Automates invoice and receipt processing for businesses using AI."
   },])
+
+  export let reviewsContext = createContext([{
+    username: "Ayaan Farrukh",
+    stars: 3,
+    review: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur necessitatibus asperiores voluptatem dolores optio repellendus maxime quidem facilis praesentium, adipisci expedita eligendi quia recusandae atque enim corporis velit, totam libero?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur necessitatibus asperiores voluptatem dolores optio repellendus maxime quidem facilis praesentium, adipisci expedita eligendi quia recusandae atque enim corporis velit, totam libero?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur necessitatibus asperiores voluptatem dolores optio repellendus maxime quidem facilis praesentium, adipisci expedita eligendi quia recusandae atque enim corporis velit, totam libero?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur necessitatibus asperiores voluptatem dolores optio repellendus maxime quidem facilis praesentium, adipisci expedita eligendi quia recusandae atque enim corporis velit, totam libero?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur necessitatibus asperiores voluptatem dolores optio repellendus maxime quidem facilis praesentium, adipisci expedita eligendi quia recusandae atque enim corporis velit, totam libero?"
+  }]);
