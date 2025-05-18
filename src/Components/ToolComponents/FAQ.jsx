@@ -17,13 +17,16 @@ export function FAQ({question,answer}) {
        setShowAns((current) => !current);
     }
 
-   return <div className="faq-ques-box" ref={quesBox}>
+   return <div className="faq-ques-box">
     <div className="ques-box"> 
         <h2>{question}</h2>
        <button onClick={() => {
         HandleOnClick();
        }}>+</button>
     </div>
-       <p className="faq-answer" ref={answerRef}>{answer}</p>
+    <div className="answer-faq-box" ref={quesBox}>
+    <p className="faq-answer" ref={answerRef}>{answer}</p>
     </div>
+    </div>
+
 }
