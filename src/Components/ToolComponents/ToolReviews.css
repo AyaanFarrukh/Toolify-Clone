@@ -1,7 +1,7 @@
 .user-reviews {
     width: 100%;
     height: fit-content;
-    border: 1px solid grey;
+    border: 1px solid rgb(228, 226, 226);;
     border-radius: 10px;
     margin-bottom: 30px;
     display: flex;
@@ -14,14 +14,15 @@
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    border: 1px solid grey;
+    border: 1px solid rgb(184, 174, 174);
     margin-bottom: 20px;
+    box-shadow: 0px 2px 4px rgb(165, 208, 230);
 }
 .user-inf-area {
     width: 100%;
     height: 50px;
     display: flex;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid rgb(184, 174, 174);
 }
 .user-name {
     width: fit-content;
@@ -47,7 +48,8 @@
     justify-content: start; 
 }
 .star-rating {
-    margin-left: 30px;
+    margin-left: 0px;
+    padding: 10px;
 }
 .star-rating span {
     transition: scale 0.2s ease-in-out;
@@ -78,10 +80,11 @@
     font-size: 30px;
 }
 .review-main-area {
-    height: 500px;
+    height: fit-content;
+    padding: 10px;
     width: 100%;
     border-radius: 10px;
-    border: 1px solid grey;
+    border: 1px solid rgb(184, 174, 174);
 }
 .review-section {
     padding: 30px;
@@ -95,7 +98,7 @@
     display: flex;
     justify-content: left;
     align-items: center;
-    border-bottom: 1px solid #808080;
+    border-bottom: 1px solid rgb(184, 174, 174);
 }
 
 .rev-stars {
@@ -110,6 +113,7 @@
 }
 .sugg-area {
     width: 100%;
+    padding: 10px; 
     height: fit-content;
     display: flex;
     align-items: center;
@@ -117,24 +121,33 @@
 }
 .sugg-area h2 {
     margin: 0px;
-    margin-left: 30px;
+    margin-left: 0px;
     font-family: "Arial";
 }
 .give-rev-area {
-    flex: 1;
+    width: 100%;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: start;
 }
 .give-rev-area textarea {
-    margin: 30px;
+    /* margin: 30px;
     height: 175px;
     width: 95%;
     font-size: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 20px; */
+    width: 100%;
+    max-width: 100%;
+    margin: 20px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+    height: 175px;
+    resize: none;
 }
 .give-rev-area button {
-    margin-left: 30px;
+    margin-left: 0px;
     width: 100px;
     height: 50px;
     font-size: large;
@@ -145,6 +158,58 @@
     cursor: pointer;
 }
 
+@media screen and (max-width: 600px) {
+    .stars-area {
+        flex-direction: column;
+        height: fit-content;
+        justify-content: center;
+    }
+    .stars-area p {
+        margin-left: 0px;
+    }
+    .stars-area span {
+        margin-left: 0px;
+    }
+    .sugg-area {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .user-inf-area {
+        flex-direction: column;
+        height: fit-content;
+        align-items: center;
+    }
+    .user-name p {
+        margin-left: 0px;
+    }
+    .user-stars-area {
+        justify-content: left;
+    }
+    .user-stars-area span {
+        margin-left: 10px;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    .stars-area {
+        flex-direction: column;
+        height: fit-content;
+        justify-content: center;
+    }
+    .stars-area p {
+        margin-left: 0px;
+    }
+    .stars-area span {
+        margin-left: 0px;
+    }
+    .sugg-area {
+        font-size: 12px;
+    }
+}
+
 
 @media screen and (max-width: 450px) {
     .user-stars-area {
@@ -152,5 +217,12 @@
     }
     .user-stars-area span {
         margin: 0px;
+    }
+    .user-inf-area {
+        padding: 10px;
+    }
+    .user-name {
+        width: fit-content;
+        height: 30px;
     }
 }

@@ -9,9 +9,8 @@ export function MainEntryArea() {
         <button>Open Site</button>
         </div>
         <div className="media-area">
-            <button>Stars</button>
-            <button>T</button>
-            <button>F</button>
+            <button><img src="images\twitter-logo-twitter-icon-transparent-free-free-png.webp" className="twitter-img"></img></button>
+            <button><img src="images\Facebook_Logo_(2019).png.webp" className="facebook-img"/></button>
         </div>
       </div>
       <div className="main-info-area">
@@ -48,10 +47,10 @@ export function MainEntryArea() {
           <div className="image-area">
             <img src="/images/tool-image-brizy.jpg" className="tool-img" />
           </div>
-          <div className="control-btns-area">
+          {/* <div className="control-btns-area">
             <button>Advertise This Tool</button>
             <button>Update This Tool</button>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

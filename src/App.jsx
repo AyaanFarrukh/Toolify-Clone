@@ -33,7 +33,10 @@ export function App() {
       <Routes>
         <Route path="/" element = {<div style={{display: "flex", flexDirection: "column"}}>
         <div ref={cursorLightRef} id="cursor-light" className="cursor-light"></div><HomePage /></div>} />
-        <Route path = "/tools" element = {<Tools />} />
+        <Route path="/tools" element = {<>
+         <div ref={cursorLightRef} id="cursor-light" className="cursor-light"></div>
+         <Tools />
+        </>} />
       </Routes>
    </>
    )

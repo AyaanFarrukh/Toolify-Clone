@@ -3,8 +3,10 @@ import { MainArea } from "../Components/ToolComponents/MainArea";
 import { MainEntryArea } from "../Components/ToolComponents/MainEntryArea";
 import { NavigateTabs } from "../Components/ToolComponents/NavigateTabs";
 import "./Tools.css"
+import { useEffect } from "react";
 
 export function Tools() {
+   
     return (
         <div style={{display: "flex", flexDirection: "column"}}>
             <Header />

@@ -23,7 +23,7 @@ export function ProductDetails() {
 
    return (
     <section className="product-detail-sec">
-        <div className="product-head-div">
+        <div className="product-head-div" id="product-detail">
             <h1>Brizy AI Product Information</h1>
         </div>
         <main className="product-details-main">
@@ -75,7 +75,7 @@ export function ProductDetails() {
                 <div className="question-box ">
                     <h1>FAQ From Brizy AI</h1>
                 </div>
-                <div className="answer-box ">
+                <div className="answer-box" id="FAQ">
                  {faq.map((q,i) => {
                     return <FAQ question={q.ques} answer={q.answer}/>
                  })}

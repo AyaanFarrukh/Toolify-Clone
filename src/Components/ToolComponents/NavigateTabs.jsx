@@ -3,11 +3,12 @@ import "../ToolComponents/nav.css"
 
 
 export function NavigateTabs() {
+
    return (
     <nav className="nav-tabs">
-      <button>Product Details</button>
-      <button>Reviews</button>
-      <button>FAQ</button>
+      <a href="#product-detail" className="nav-link"><button>Product Details</button></a>
+      <a href="#reviews" className="nav-link"><button>Reviews</button></a>
+      <a href = "#FAQ" className="nav-link"><button>FAQ</button></a>
       <button>Analytics</button>
     </nav>
    )

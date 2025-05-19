@@ -1,6 +1,7 @@
 .price-grid-area {
     background-color: white;
-    border: 1px solid grey;
+    border: 1px solid rgb(228, 226, 226);
+    box-shadow: 0px 2px 4px rgb(165, 208, 230);
     border-radius: 10px;
     width: 100%;
     height: fit-content;
@@ -8,7 +9,7 @@
     display: grid;
     align-content: center;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit,minmax(325px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
     gap: 10px;
 }
 .price-box {
@@ -17,10 +18,10 @@
      padding: 10px;
      display: flex;
      flex-direction: column;
-     height: 175px;
+     height: auto;
      border-radius: 10px;
-     border: 1px solid grey;
-     box-shadow: 0px 2px 4px rgb(180, 175, 175);
+     border: 1px solid rgb(184, 174, 174);
+     box-shadow: 0px 2px 4px rgb(165, 208, 230);
 }
 .price-head {
     width: 100%;
@@ -44,5 +45,16 @@
     font-family: "Arial";
 }
 .price-info p {
+    margin-top: 0px;
     margin-left: 10px;
+}
+
+
+@media screen and (max-width: 1145px) {
+    .price-head h1 {
+        font-size: 24px;
+    }
+    .price-info p {
+
+    }
 }

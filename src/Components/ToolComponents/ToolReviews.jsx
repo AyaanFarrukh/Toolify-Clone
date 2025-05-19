@@ -12,7 +12,7 @@ export function ToolsReviews() {
         reviews: ""
     });
     return <>
-     <section className="product-detail-sec">
+     <section className="product-detail-sec" id="reviews">
             <div className="product-head-div">
                 <h1>Brizy AI Reviews</h1>
             </div>
@@ -38,8 +38,12 @@ export function ToolsReviews() {
             <main className="product-details-main review-section">
                <div className="review-main-area">
                  <div className="stars-area">
+                    <div>
                  <span className="rev-stars" style={{color: "blue"}}>★★★★★</span>
-                 <p>5 points Out Of 5 points</p>
+                    </div>  
+                    <div>
+                    <p>5 points Out Of 5 points</p>
+                    </div>
                  </div>
                  <div className="sugg-area">
                     <h2>Would you recommend Brizy AI? Leave a comment</h2>
